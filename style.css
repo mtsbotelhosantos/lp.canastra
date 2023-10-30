@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    min-width: 676px;
+  }
+#logo{
+    max-width: 250px;
+   
+}
+span{
+    background-color: #0e438a;
+    border-radius: 25px;
+    padding: 0 20px 0 20px;
+    color: white;
+    font-size: 45px;
+}
+.div-central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 676px;
+}
+#first-section{
+    /* background-color: aqua; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    
+
+    
+}
+.chamada-texto{
+    font-family: 'Source Sans 3', sans-serif;
+    color: #0e438a;
+    font-size: 25px;
+    line-height: 50px;
+    /* background-color: blueviolet; */
+    width: 750px;
+    
+    
+}
+#chamada_pronta{
+    
+    max-width: 500px;
+}
