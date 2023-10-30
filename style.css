@@ -3,8 +3,16 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  html{
+   
+  }
+:root{
+    --text-color: #0e438a;
+    --bk-buttons: rgb(158, 0, 0);  
+    --tx-font: 'Source Sans 3', sans-serif;
+}
 header {
+    
     padding-top: 20px;
     text-align: center;
     padding-bottom: 10px;
@@ -14,8 +22,9 @@ header {
     max-width: 250px;
    
 }
+
 span{
-    background-color: #0e438a;
+    background-color: var(--text-color);
     border-radius: 25px;
     padding: 0 20px 0 20px;
     color: white;
@@ -27,7 +36,9 @@ span{
     align-items: center;
     justify-content: center;
     min-width: 676px;
+    
 }
+
 #first-section{
     /* background-color: aqua; */
     display: flex;
@@ -36,20 +47,85 @@ span{
     text-align: left;
     align-items: center;
     
+    
 
     
 }
 .chamada-texto{
     font-family: 'Source Sans 3', sans-serif;
-    color: #0e438a;
+    color: var(--text-color);
     font-size: 25px;
     line-height: 50px;
     /* background-color: blueviolet; */
     width: 750px;
+    margin-bottom: 50px;
     
     
 }
-#chamada_pronta{
+.primeiro-h1{
     
+    padding-bottom: 25px;
+}
+.segundo-h1{
+    margin-top: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 30px;
+    line-height: 35px;
+}
+#chamada_pronta{
+    /* background-color: #0e438a; */
     max-width: 500px;
+}
+.buttons{
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+    
+}
+.botao-div{
+    display: flex;
+    /* background-color: blueviolet; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 160px;
+    
+   
+
+    
+}
+i{
+    font-size: 40px;
+    position: absolute;
+    left: 11px;
+    color: white;
+    
+    transform: rotate(-15deg);
+
+    
+    
+
+}
+
+button{
+    background-color: var(--bk-buttons);
+    border: none;
+    padding: 20px 20px 20px 50px;
+    
+    font-family: var(--tx-font);
+    font-weight: 700;
+    border-radius: 20px;
+    width: 150px;
+    height: 80px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin: 0 14px; */
+    color: white;
+    
+    
+
 }
