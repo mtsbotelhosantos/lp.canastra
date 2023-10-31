@@ -192,13 +192,13 @@ span{
     text-align: center;
 
 }
-.page2 h3{
+.page2, .page8 h3{
     
     margin-top: 21px;
     font-weight: 400;
     line-height: 35px;
 }
-.page4 h3{
+.page4, .page8 h3{
     
     margin-top: 21px;
     font-weight: 400;
@@ -364,7 +364,181 @@ span{
     line-height: 35px;
 }
 
+/*PAGE 7*/
 
+.page7{
+    display: flex;
+    justify-content: center;
+    background-color:   #0d0f0e;
+    width: 100vw;
+    /* height: 500px; */
+    height: 600px;
+    
+   
+    
+}
+.page8{
+    padding: 20px;
+}
+.page8 h3{
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--text-color);
+    font-size: 25px;
+    line-height: 30px;
+    /* background-color: blueviolet; */
+    max-width: 650px;
+    /* min-width: 750px; */
+    margin-bottom: 50px;
+    text-align:center;
+}
+.h1-sobre{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-color: #001f86;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #001f86;
+    max-width: 650px;
+}
+.sobre-nos{
+    align-items: center;
+    text-align: center;
+}
+.img_fabric{
+    width: 350px;
+}
+
+
+/* ------------------CARROSSEL IMAGENS-------------- */
+.slideshow-container {
+    
+    width: 100%;
+    position: relative;
+    margin: auto;
+
+}
+
+.slideshow {
+    display: none;
+    border-radius: 20PX;
+   
+  
+
+}
+
+
+.slideshow img {
+     width:350px;
+     border-radius: 20PX;
+
+     box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    
+    }
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.numeracao {
+
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.paginacao { 
+  
+    width:100%; 
+    float:left;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.dot {
+
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    border-radius: 50px;
+    background-color: #007cff;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.ativo,
+.dot:hover {
+    background-color: #242424;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*960PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (min-width:60em){
+
+
+    .legenda   { font-size:2em; padding:8px; }
+    .paginacao { margin:20px 0; }
+    .dot       { width:18px; height:18px; }
+}
+
+/* ------------------end CARROSSEL IMAGENS-------------- */
 
 /* MEDIA QRY */
 @media (max-width: 1287px){
