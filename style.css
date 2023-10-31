@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
   }
+  html {
+    scroll-behavior: smooth;
+  }
 
 :root{
     --text-color: #0e438a;
@@ -529,6 +532,12 @@ span{
     }
 }
 
+
+
+
+
+
+
 /*960PX BREAKPOINT - Ajustando o texto para desktop*/
 @media (min-width:60em){
 
@@ -539,6 +548,97 @@ span{
 }
 
 /* ------------------end CARROSSEL IMAGENS-------------- */
+
+.page_contact{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    /* height: 500px; */
+    height: 1180px;
+    background-color: #001f86;
+    background-image: linear-gradient(to bottom right, #2b4bb4d3, #453ba0);
+    
+}
+.chamada-texto-contact {
+    text-align: center;
+}
+.chamada-texto-contact h1{
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+    /* background-color: blueviolet; */
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+.chamada-texto-contact h3{
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    
+    font-size: 30px;
+    font-weight: 400;
+}
+form{
+    margin-top:40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+fieldset{
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #001f8631;
+
+}
+legend{
+    text-align: end;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    color: #001f86;
+    font-size: 18zpx;
+}
+input {
+    width: 260px;
+    height: 40px;
+    /* border-radius: 10px; */
+    /* border-width: 0.1px; */ 
+    border: none;
+    padding: 5px;
+    color: #0084b8;
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+}
+select{
+    width: 260px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #0084b8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#botao_enviar_orc{
+    background-color: rgb(56, 187, 30);
+    color: white;
+    border-radius: 10px;
+}
+#botao_enviar_orc:hover{
+    background-color: rgb(19, 107, 1);
+}
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QRY */
 @media (max-width: 1287px){
