@@ -2,26 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
-  html{
-   
-  }
+
 :root{
     --text-color: #0e438a;
     --bk-buttons: rgb(158, 0, 0);  
     --tx-font: 'Source Sans 3', sans-serif;
 }
+#main{
+    display: flex;
+}
+
 header {
-    
+    display: flex;
     padding-top: 20px;
     text-align: center;
     padding-bottom: 10px;
     min-width: 676px;
+    justify-content: center;
   }
 #logo{
     max-width: 250px;
    
 }
+
 
 span{
     background-color: var(--text-color);
@@ -35,22 +40,60 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 676px;
+    /* min-width: 676px; */
+    /* width: 100vw; */
+    
     
 }
-
-#first-section{
+.page1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sections-head{
     /* background-color: aqua; */
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     text-align: left;
     align-items: center;
+    gap: 30px;
+
     
     
 
     
 }
+
+.sections{
+    /* background-color: aqua; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    gap: 30px;
+
+    
+    
+
+    
+}
+.sections-page3{
+    /* background-color: aqua; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    gap: 30px;
+
+    
+    
+
+    
+}
+
 .chamada-texto{
     font-family: 'Source Sans 3', sans-serif;
     color: var(--text-color);
@@ -59,6 +102,7 @@ span{
     /* background-color: blueviolet; */
     width: 750px;
     margin-bottom: 50px;
+    
     
     
 }
@@ -71,7 +115,7 @@ span{
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 400;
     color: var(--text-color);
-    font-size: 30px;
+    font-size: 25px;
     line-height: 35px;
 }
 #chamada_pronta{
@@ -86,46 +130,369 @@ span{
     padding-bottom: 50px;
     
 }
-.botao-div{
+.botoes_escolha{
+    
+    width: 200px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.botoes_escolha:hover{
+
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1.25,1.25);
+}
+
+/* SECOND SECTION */
+
+.page2{
     display: flex;
-    /* background-color: blueviolet; */
-    text-align: center;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 160px;
+    background: url(/assets/second-section2.png) no-repeat center;
+    background-size:cover;
+    width: 100vw;
+    /* height: 500px; */
+    height: 100vh;
     
    
-
     
 }
-i{
-    font-size: 40px;
-    position: absolute;
-    left: 11px;
+.cinta_orcamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chamada-texto-second{
+    
+    font-family: 'Source Sans 3', sans-serif;
     color: white;
-    
-    transform: rotate(-15deg);
+    font-size: 25px;
+    line-height: 50px;
+    /* background-color: blueviolet; */
+    width: 650px;
+    /* min-width: 750px; */
+    margin-bottom: 50px;
+    text-align: end;
 
+}
+.cinta_canastra_sec{
+    width: 500px;
     
+}
+.orcamento{
+    width: 400px;
+    align-items: center;
+    margin-top: 20px;
+}
+.h1-page2{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-color: var(--bk-buttons);
+    text-align: center;
+
+}
+.page2 h3{
+    
+    margin-top: 21px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.page4 h3{
+    
+    margin-top: 21px;
+    font-weight: 400;
+    line-height: 35px;
+}
+#pulsating-button {
+    
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  #pulsating-button:hover{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1.25,1.25);
+    animation: none;
+  }
+
+  /* THIRD SECTION */
+
+  .page3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+   
+    width: 100vw;
+    /* height: 500px; */
+    height: 100vh;
+    
+   
+    
+}
+.h1-page3{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-color: #4cb5bb;
+    text-align: center;
+    color: #4cb5bb;
+
+}
+.chamada-texto-third{
+    
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--text-color);
+    font-size: 25px;
+    line-height: 50px;
+    /* background-color: blueviolet; */
+    width: 650px;
+    /* min-width: 750px; */
+    margin-bottom: 50px;
+    text-align:initial;
+
+}
+.page3 h3{
+    color: #0ba2aa;
+    
+    margin-top: 21px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.sub-title{
+    font-size: 20px;
+}
+
+ /* FOURTH SECTION */
+
+ .page4{
+    
+    display: flex;
+    justify-content: center;
+    background: url(/assets/background_acai.png) no-repeat center;
+    background-size:cover;
+    width: 100vw;
+    /* height: 500px; */
+    height: 100vh;
+    
+   
+    
+}
+.h1-page4{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-color: #5b152f;
+    text-align: center;
     
 
 }
 
-button{
-    background-color: var(--bk-buttons);
-    border: none;
-    padding: 20px 20px 20px 50px;
-    
-    font-family: var(--tx-font);
-    font-weight: 700;
-    border-radius: 20px;
-    width: 150px;
-    height: 80px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* margin: 0 14px; */
-    color: white;
-    
-    
 
+ /* FIFTH SECTION */
+.page5{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+   
+    width: 100vw;
+    /* height: 500px; */
+    height: 100vh;
+}
+.h1-page5{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-color: #d4004e;
+    text-align: center;
+    color:#d4004e;
+
+}
+.page5 h3{
+    color: #bd4470;
+    
+    margin-top: 21px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+
+ /* SIXTH SECTION */
+.page6{
+    display: flex;
+    justify-content: center;
+    background: url(/assets/sixth-section.png) no-repeat center;
+    background-size:cover;
+    width: 100vw;
+    /* height: 500px; */
+    height: 100vh;
+    
+   
+    
+}
+.h1-page6{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-color: #3cbabf;
+    text-align: center;
+
+}
+.page6 h3{
+    
+    margin-top: 21px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+
+
+/* MEDIA QRY */
+@media (max-width: 1287px){
+    .sections-head{
+        display: block;
+        
+    }
+    header {
+        min-width: 350px;
+      }
+    .orcamento{
+        margin: 0;
+        width: 250px;
+    }
+    .sections{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 40px; */
+       
+    }
+    .sections-page3{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+     .page2, .page3, .page4, .page5, .page6{
+        display: block;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        background-size:cover;
+        height: 1050px;
+        
+    }
+    .div1{
+        display: flex;
+        text-align: center;
+        width: 350px;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .h1-page2, .h1-page3, .h1-page5, .h1-page6{
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 7px;
+        justify-content: center;
+    }
+    .h1-page4{
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 7px;
+        justify-content: center;
+    }
+    .chamada-texto-second, .chamada-texto-third{
+        display: block;
+        
+        margin-bottom: 10px;
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 50px;
+        /* background-color: blueviolet; */
+        width: 350px;
+        /* min-width: 750px; */
+        
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding-bottom: 0px;
+    }
+    .imagem-section-1{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+
+    }
+    .botoes_escolha{
+        width: 250px;
+    }
+    #chamada_pronta{
+        max-width: 350px;
+    }
+    .page2, .page3, .page4, .page5, .page6{
+        display: block;
+        
+    }
+    .cinta_orcamento{
+        display: block;
+    }
+    
+    .cinta_canastra_sec{
+        width: 350px;
+
+    }
+    .page4 .cinta_canastra_sec{
+        margin-bottom: 40px;
+    }
+    .page2 h3, .page3 h3, .page5 h3, .page6 h3{
+        
+        
+        margin-top: 10px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+    .page4 h3{
+        margin-top: 30px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+    .chamada-texto{
+        width: 380px;
+    }
 }
