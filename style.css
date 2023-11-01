@@ -149,7 +149,7 @@ span{
 .page2{
     display: flex;
     justify-content: center;
-    background: url(/assets/second-section2.png) no-repeat center;
+    background: url(assets/second-section2.png) no-repeat center;
     background-size:cover;
     width: 100vw;
     /* height: 500px; */
@@ -285,7 +285,7 @@ span{
     
     display: flex;
     justify-content: center;
-    background: url(/assets/background_acai.png) no-repeat center;
+    background: url(assets/background_acai.png) no-repeat center;
     background-size:cover;
     width: 100vw;
     /* height: 500px; */
@@ -305,7 +305,14 @@ span{
     
 
 }
-
+h6{
+    
+    line-height: 20px;
+}
+.page3 h6, .page5 h6{
+    color: #7e7e7e;
+   
+}
 
  /* FIFTH SECTION */
 .page5{
@@ -360,7 +367,7 @@ span{
     text-align: center;
 
 }
-.page6 h3{
+.page6 h3, .page4 h3, .page2 h3{
     
     margin-top: 21px;
     font-weight: 400;
