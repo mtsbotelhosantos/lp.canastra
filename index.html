@@ -271,30 +271,30 @@
                     <div class="chamada-texto-contact">
                         <h1 class="">Faça Seu Orçamento</h1>
                         <h3>Faça seu cadastro <br>para receber um orçamento <br>personalizado e tirar todas<br> as dúvidas.</h3>
-                        <form action="">
+                        <form method="post" action="" name="contact-form">
                             <fieldset>
                                 <legend>Nome da Empresa *</legend>
-                                <input type="text" placeholder="" required>
+                                <input type="text" placeholder="" name="Nome_Empresa" required>
                             </fieldset>
                             <fieldset>
                                 <legend>CNPJ *</legend>
-                                <input id="produto-1-cnpj" type="text" placeholder="00.000.000/0000-00" required>
+                                <input id="produto-1-cnpj" type="text" placeholder="00.000.000/0000-00" name="CNPJ" required>
                             </fieldset>
                             <fieldset>
                                 <legend>Nome do Responsável *</legend>
-                                <input type="text" required>
+                                <input type="text" name="Nome_Responsavel" required>
                             </fieldset>
                             <fieldset>
                                 <legend>Telefone com DDD *</legend>
-                                <input id="telefone" type="text" placeholder="(00) 0000-0000" maxlength="15" required>
+                                <input id="telefone" type="text" placeholder="(00) 0000-0000" maxlength="15" name="Telefone" required>
                             </fieldset>
                             <fieldset>
                                 <legend>E-mail *</legend>
-                                <input type="email" required>
+                                <input type="email" name="Email" required>
                             </fieldset>
                             <fieldset>
                                 <legend>Produto de Interesse *</legend>
-                                <select name="" id="" required>
+                                <select  id=""  name="Prod_Interesse" required>
                                     <option value=""></option>
                                     <option value="Cintas Para Pote de Sorvete">Cintas Para Pote de Sorvete</option>
                                     <option value="Caixa de Sorvete 5L">Caixa de Sorvete 5L</option>

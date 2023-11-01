@@ -115,4 +115,15 @@ id('telefone').onkeyup = function(){
 }
 
 
-//SCROLL SMOOTH
+//CONTACT FORM
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyLxKRl_28yKgCIzx5eCnq3To2CYwQID7PbrDM77-DaL-V4FcVZIftnQS-Rtv0XXDxTjg/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Obrigado por se inscrever." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
