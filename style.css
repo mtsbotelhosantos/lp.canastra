@@ -348,7 +348,7 @@ h6{
 .page6{
     display: flex;
     justify-content: center;
-    background: url(/assets/sixth-section.png) no-repeat center;
+    background: url(assets/sixth-section.png) no-repeat center;
     background-size:cover;
     width: 100vw;
     /* height: 500px; */
