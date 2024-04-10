@@ -116,7 +116,7 @@ id('telefone').onkeyup = function(){
 
 
 //CONTACT FORM
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyLxKRl_28yKgCIzx5eCnq3To2CYwQID7PbrDM77-DaL-V4FcVZIftnQS-Rtv0XXDxTjg/exec'
+const scriptURL = hidden //CONST OCULTA
 
 const form = document.forms['contact-form']
 
